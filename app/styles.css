@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Staatliches&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-text-light font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-staatliches;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply fixed top-0 left-0 w-full bg-dark-bg/80 backdrop-blur-md z-50 transition-all duration-300;
+  }
+
+  .nav-links {
+    @apply flex items-center gap-6;
+  }
+
+  .nav-link {
+    @apply text-text-light hover:text-primary-color transition-colors duration-300;
+  }
+
+  .hero {
+    @apply relative h-screen w-full flex items-center justify-center overflow-hidden;
+  }
+
+  .hero-content {
+    @apply relative z-10 text-center max-w-4xl mx-auto px-4;
+  }
+
+  .hero-title {
+    @apply text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary-color to-primary-dark bg-clip-text text-transparent;
+  }
+
+  .hero-subtitle {
+    @apply text-xl md:text-2xl text-text-light/90 mb-8;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-color to-primary-dark text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity duration-300;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-primary-color text-primary-color px-8 py-3 rounded-full font-medium hover:bg-primary-color hover:text-white transition-all duration-300;
+  }
+
+  .section {
+    @apply py-20 px-4;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .card {
+    @apply bg-dark-bg/50 backdrop-blur-md rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .input-field {
+    @apply w-full bg-dark-bg/50 border border-text-light/20 rounded-lg px-4 py-3 text-text-light focus:outline-none focus:border-primary-color transition-colors duration-300;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-color rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-dark;
+}
