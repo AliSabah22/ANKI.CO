@@ -12,18 +12,19 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero relative min-h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/80 to-dark-bg/40 z-0" />
         <Image
-          src="/pictures/hero/container-home-hero.jpg"
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
           alt="Modern Container Home"
           fill
           className="object-cover z-0"
           priority
+          quality={100}
         />
-        <div className="hero-content animate-fade-in">
-          <h1 className="hero-title">Sustainable Living, Redefined</h1>
-          <p className="hero-subtitle">
+        <div className="hero-content animate-fade-in text-center z-10 px-4">
+          <h1 className="hero-title text-5xl md:text-6xl font-bold mb-6">Sustainable Living, Redefined</h1>
+          <p className="hero-subtitle text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
             Transform shipping containers into beautiful, eco-friendly homes.
             Custom designs, expert craftsmanship, and sustainable materials.
           </p>
@@ -39,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="section bg-gradient-dark">
+      <section className="section bg-gradient-dark py-20">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -60,12 +61,12 @@ export default function Home() {
                 Learn More
               </Link>
             </div>
-            <div className="relative h-[400px] rounded-xl overflow-hidden">
+            <div className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl">
               <Image
-                src="/pictures/th-3448510966.jpg"
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
                 alt="Container Home"
                 fill
-                className="object-cover"
+                className="object-cover hover:scale-105 transition-transform duration-500"
                 priority
               />
             </div>
@@ -74,19 +75,19 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="section bg-gradient-dark">
+      <section className="section bg-gradient-dark py-20">
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-12">
             Why Choose <span className="text-primary-color">Container Homes</span>?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="card group">
-              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+            <div className="card group hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
                 <Image
-                  src="/pictures/features/sustainability.jpg"
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
                   alt="Sustainable Living"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-xl font-bold mb-4">Eco-Friendly</h3>
@@ -95,13 +96,13 @@ export default function Home() {
                 and energy-efficient designs.
               </p>
             </div>
-            <div className="card group">
-              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+            <div className="card group hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
                 <Image
-                  src="/pictures/features/customization.jpg"
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
                   alt="Custom Design"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-xl font-bold mb-4">Custom Design</h3>
@@ -110,13 +111,13 @@ export default function Home() {
                 premium finishes.
               </p>
             </div>
-            <div className="card group">
-              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+            <div className="card group hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
                 <Image
-                  src="/pictures/features/affordable.jpg"
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
                   alt="Affordable Living"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-xl font-bold mb-4">Cost-Effective</h3>
@@ -130,34 +131,66 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="section">
+      <section className="section py-20">
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-12">
             Our <span className="text-primary-color">Process</span>
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="card text-center">
+            <div className="card text-center hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+                  alt="Consultation"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="text-4xl font-bold text-primary-color mb-4">1</div>
               <h3 className="text-xl font-bold mb-4">Consultation</h3>
               <p className="text-text-light/80">
                 Discuss your vision and requirements with our experts.
               </p>
             </div>
-            <div className="card text-center">
+            <div className="card text-center hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+                  alt="Design"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="text-4xl font-bold text-primary-color mb-4">2</div>
               <h3 className="text-xl font-bold mb-4">Design</h3>
               <p className="text-text-light/80">
                 Create a custom design that matches your needs and style.
               </p>
             </div>
-            <div className="card text-center">
+            <div className="card text-center hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+                  alt="Construction"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="text-4xl font-bold text-primary-color mb-4">3</div>
               <h3 className="text-xl font-bold mb-4">Construction</h3>
               <p className="text-text-light/80">
                 Build your home with precision and attention to detail.
               </p>
             </div>
-            <div className="card text-center">
+            <div className="card text-center hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+                  alt="Completion"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="text-4xl font-bold text-primary-color mb-4">4</div>
               <h3 className="text-xl font-bold mb-4">Completion</h3>
               <p className="text-text-light/80">
@@ -169,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-gradient-dark">
+      <section className="section bg-gradient-dark py-20">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Start Your <span className="text-primary-color">Project</span>?

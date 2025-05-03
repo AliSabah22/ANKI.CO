@@ -14,7 +14,7 @@ export default function About() {
       <section className="hero">
         <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/80 to-dark-bg/40 z-0" />
         <Image
-          src="/pictures/hero/about-hero.jpg"
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80"
           alt="About Us Background"
           fill
           className="object-cover z-0"
@@ -73,7 +73,7 @@ export default function About() {
             </div>
             <div className="relative h-[500px] rounded-xl overflow-hidden">
               <Image
-                src="/pictures/features/sustainability.jpg"
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
                 alt="Sustainable Living"
                 fill
                 className="object-cover"
@@ -93,7 +93,7 @@ export default function About() {
             <div className="card group">
               <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
                 <Image
-                  src="/pictures/team/team1.jpg"
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
                   alt="Team Member"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -108,7 +108,7 @@ export default function About() {
             <div className="card group">
               <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
                 <Image
-                  src="/pictures/team/team2.jpg"
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
                   alt="Team Member"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -123,7 +123,7 @@ export default function About() {
             <div className="card group">
               <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
                 <Image
-                  src="/pictures/team/team3.jpg"
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
                   alt="Team Member"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

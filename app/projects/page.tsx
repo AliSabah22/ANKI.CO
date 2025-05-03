@@ -14,7 +14,7 @@ const projects = [
     category: 'residential',
     location: 'Malibu, CA',
     size: '1200 sq ft',
-    image: '/pictures/projects/beachfront.jpg',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
     features: ['Ocean view', 'Solar panels', 'Rainwater harvesting'],
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     category: 'residential',
     location: 'New York, NY',
     size: '800 sq ft',
-    image: '/pictures/projects/urban-studio.jpg',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80',
     features: ['Rooftop garden', 'Smart home system', 'Energy efficient'],
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     category: 'residential',
     location: 'Aspen, CO',
     size: '1600 sq ft',
-    image: '/pictures/projects/mountain-cabin.jpg',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80',
     features: ['Wood stove', 'Large windows', 'Natural materials'],
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     category: 'commercial',
     location: 'Austin, TX',
     size: '2000 sq ft',
-    image: '/pictures/projects/office-space.jpg',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80',
     features: ['Open floor plan', 'Meeting rooms', 'Break area'],
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     category: 'commercial',
     location: 'Portland, OR',
     size: '1500 sq ft',
-    image: '/pictures/projects/cafe.jpg',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80',
     features: ['Outdoor seating', 'Kitchen space', 'Storage area'],
   },
   {
@@ -59,7 +59,7 @@ const projects = [
     category: 'commercial',
     location: 'Seattle, WA',
     size: '1000 sq ft',
-    image: '/pictures/projects/art-studio.jpg',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80',
     features: ['Natural lighting', 'Ventilation system', 'Storage space'],
   },
 ];
@@ -71,7 +71,7 @@ export default function Projects() {
       <section className="hero">
         <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/80 to-dark-bg/40 z-0" />
         <Image
-          src="/pictures/hero/projects-hero.jpg"
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80"
           alt="Projects Background"
           fill
           className="object-cover z-0"
